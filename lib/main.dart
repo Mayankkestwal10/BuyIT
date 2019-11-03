@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:carousel_pro/carousel_pro.dart';
 
 import 'package:buyit/components/horizontal_list.dart';
+import 'package:buyit/components/products.dart';
 
 void main(){
   runApp(
@@ -142,6 +143,12 @@ class _HomePageState extends State<HomePage>{
             padding: EdgeInsets.all(20.0),
             child: Text("Recent Products", textAlign: TextAlign.center, style: TextStyle(color: Colors.grey, fontWeight: FontWeight.bold, fontSize: 15.0),),
           ),
+
+          //Grid View
+          Container(
+            height: 320.0,
+            child: Product(),
+          )
 
         ],
       ),
